@@ -6,3 +6,5 @@ Done Build a Basic UI at 9h5
 Done Connect the UI to Code at 9h30
 
 Done Work with View Controllers at 16h50
+
+Done Implement a Custom Control at 18h
