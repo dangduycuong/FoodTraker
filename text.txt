@@ -1,2 +1,6 @@
 Bat day lam Theo FoodTracker
 9h kem 10
+
+Done Build a Basic UI at 9h5
+
+Done Connect the UI to Code at 9h30
