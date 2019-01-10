@@ -8,3 +8,6 @@ Done Connect the UI to Code at 9h30
 Done Work with View Controllers at 16h50
 
 Done Implement a Custom Control at 18h
+
+Ngay 10/01/2019
+Done Define Your Data Model at 10h35
