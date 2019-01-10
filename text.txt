@@ -11,3 +11,5 @@ Done Implement a Custom Control at 18h
 
 Ngay 10/01/2019
 Done Define Your Data Model at 10h35
+
+Done Create a Table View at 15h
