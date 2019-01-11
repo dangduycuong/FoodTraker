@@ -17,3 +17,8 @@ Done Create a Table View at 15h
 Done Implement Navigation at 15h50
 
 Done Implement Edit and Delete Behavior at 16h40
+
+Ngày 11/01/2019
+
+Done Persist Data at 8h50
+
