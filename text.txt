@@ -22,3 +22,5 @@ Ngày 11/01/2019
 
 Done Persist Data at 8h50
 
+
+Thêm tính năng search cho FoodTracker: 15h40 17.01.2019

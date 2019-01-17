@@ -16,6 +16,9 @@ class MealTableViewController: UITableViewController {
     
     var meals = [Meal]()
 
+    let searchController = UISearchController(searchResultsController: nil)
+    var filteredMeals = [Meal]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +35,13 @@ class MealTableViewController: UITableViewController {
 
         // Load the sample data.
         loadSampleMeals()
+        
+        // Setup for search
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Meal Here"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
     }
 
     // MARK: - Table view data source
@@ -42,8 +52,12 @@ class MealTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isFiltering() {
+            return filteredMeals.count
+        } else {
+            return meals.count
+        }
         
-        return meals.count
     }
 
     
@@ -57,7 +71,19 @@ class MealTableViewController: UITableViewController {
         }
         
         // Fetches the appropriate meal for the data source layout.
-        let meal = meals[indexPath.row]
+        var meal = meals[indexPath.row]
+        
+        if isFiltering() {
+            meal = filteredMeals[indexPath.row]
+        } else {
+            meal = meals[indexPath.row]
+        }
+        
+        // Set color when user touch inside (or click choose)
+        let backgroudView = UIView()
+        backgroudView.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        cell.selectedBackgroundView = backgroudView
+        indexPath.row % 2 == 0 ? (cell.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)) : (cell.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
         
         cell.nameLabel.text = meal.name
         cell.photoImageView.image = meal.photo
@@ -88,22 +114,6 @@ class MealTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
     // MARK: - Navigation
@@ -195,5 +205,30 @@ class MealTableViewController: UITableViewController {
     private func loadMeals() -> [Meal]? {
         return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
     }
+    
+    
+    //MARK: Methods for Search
+    func searchBarEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarEmpty()
+    }
+    
+    func filterContentForSearchText(_ searchText: String) {
+        filteredMeals = meals.filter({(meal: Meal) -> Bool in
+            return meal.name.lowercased().contains(searchText.lowercased())
+        })
+        tableView.reloadData()
+    }
 
+}
+
+extension MealTableViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+    
+    
 }
