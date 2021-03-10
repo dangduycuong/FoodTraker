@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
