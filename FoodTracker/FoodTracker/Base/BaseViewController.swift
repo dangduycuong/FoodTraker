@@ -93,6 +93,14 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         view.layer.shadowRadius = 10
     }
     
+    func setShadowView(view: UIView, cornerRadius: CGFloat) {
+        view.layer.cornerRadius = cornerRadius
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 10
+    }
+    
     func setShadowButton(button: UIButton, cornerRadius: CGFloat) {
         button.layer.cornerRadius = cornerRadius
         button.layer.shadowColor = UIColor.black.cgColor

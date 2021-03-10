@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  FoodTracker
+
+  Created by Dang Duy Cuong on 3/10/21.
+  Copyright © 2021 Apple. All rights reserved.
+*/
+"_1000"                      = "Quản lý công việc(WO)";
+"6" = "Sáu";
+"detail_food" = "Chi Tiết Món Ăn";
+"danh_sach_mon_an" = "Danh Sách Món Ăn";
+"them_moi_mon_an" = "Thêm Mới Món Ăn";

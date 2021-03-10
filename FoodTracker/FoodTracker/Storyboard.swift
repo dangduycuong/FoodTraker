@@ -24,5 +24,9 @@ extension Storyboard {
         static func newMealViewController() -> NewMealViewController {
             return manager.instantiateViewController(withIdentifier: "NewMealViewController") as! NewMealViewController
         }
+        
+        static func mealTableViewController() -> MealTableViewController {
+            return manager.instantiateViewController(withIdentifier: "MealTableViewController") as! MealTableViewController
+        }
     }
 }

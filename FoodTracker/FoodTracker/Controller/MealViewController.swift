@@ -41,7 +41,7 @@ class MealViewController: BaseViewController, UITextFieldDelegate, UINavigationC
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        title = "Detail Food"
+        title = "detail_food".language()
     }
     
     func fillData() {

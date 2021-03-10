@@ -42,7 +42,7 @@ class NewMealViewController: BaseViewController, UITextFieldDelegate, UINavigati
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        title = "Add New Food"
+        title = "them_moi_mon_an".language()
     }
     
     @objc func saveMeal() {

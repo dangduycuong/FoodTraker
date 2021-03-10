@@ -26,7 +26,7 @@ class MealTableViewController: BaseViewController {
     
     var count: Int = 0 {
         didSet {
-            pageLabel.text = "\(count)"
+            pageLabel.text = "\(count)".language()
         }
     }
     
@@ -39,14 +39,15 @@ class MealTableViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         print(Realm.Configuration.defaultConfiguration)
         
         tableView.register(MealTableViewCell.nib(), forCellReuseIdentifier: MealTableViewCell.identifier())
         
         // Use the edit button item provided by the table view controller.
         //        navigationItem.leftBarButtonItem = editButtonItem
-        let leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editData))
-        navigationItem.leftBarButtonItem = leftBarButtonItem
+//        let leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editData))
+//        navigationItem.leftBarButtonItem = leftBarButtonItem
         let rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "icons8-reboot"), style: .done, target: self, action: #selector(reloadMeal))
         
         navigationItem.rightBarButtonItem = rightBarButtonItem
@@ -55,6 +56,11 @@ class MealTableViewController: BaseViewController {
         tableView.allowsMultipleSelectionDuringEditing = true
         
         setShadowButton(button: addButton, cornerRadius: 20)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        title = "danh_sach_mon_an".language()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -110,6 +116,7 @@ class MealTableViewController: BaseViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+  
 }
 
 extension MealTableViewController: UITableViewDataSource {

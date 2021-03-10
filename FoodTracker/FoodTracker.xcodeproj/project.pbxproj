@@ -18,6 +18,15 @@
 		B2A32E0BB74BB43DC2AFEA8E /* Pods_FoodTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DDD82F72F50D8015E9F73A /* Pods_FoodTracker.framework */; };
 		CE0C4F8F21E725FE002DD904 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C4F8E21E725FE002DD904 /* MealTableViewCell.swift */; };
 		CE0C4F9221E728C9002DD904 /* MealTableViewControlle1r.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C4F9121E728C9002DD904 /* MealTableViewControlle1r.swift */; };
+		CE58680F25F8A9A600A84BB8 /* NSBundle+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58680925F8A9A500A84BB8 /* NSBundle+Localization.m */; };
+		CE58681025F8A9A600A84BB8 /* LocalizationHandlerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58680B25F8A9A500A84BB8 /* LocalizationHandlerUtil.m */; };
+		CE58681125F8A9A600A84BB8 /* BundleLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58680E25F8A9A600A84BB8 /* BundleLocalization.m */; };
+		CE58681425F8AA3300A84BB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE58681625F8AA3300A84BB8 /* Localizable.strings */; };
+		CE58681B25F8AAA600A84BB8 /* VTLocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58681A25F8AAA600A84BB8 /* VTLocalizedString.swift */; };
+		CE58682925F8C13C00A84BB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58682825F8C13C00A84BB8 /* LoginViewController.swift */; };
+		CE58682B25F8C1A000A84BB8 /* ParticleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE58682A25F8C1A000A84BB8 /* ParticleScene.sks */; };
+		CE58682E25F8C1B300A84BB8 /* ParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58682D25F8C1B300A84BB8 /* ParticleScene.swift */; };
+		CE58683025F8D04C00A84BB8 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58682F25F8D04C00A84BB8 /* UserDefaultKey.swift */; };
 		CE59D07B21E6EF1A0007FA42 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59D07A21E6EF1A0007FA42 /* Meal.swift */; };
 		CE9110C221E5FD7A00F777F4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9110C121E5FD7A00F777F4 /* RatingControl.swift */; };
 		CEF41E4D25F7248D007928A6 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF41E4C25F7248D007928A6 /* MealTableViewCell.xib */; };
@@ -76,6 +85,23 @@
 		C8DDD82F72F50D8015E9F73A /* Pods_FoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C4F8E21E725FE002DD904 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		CE0C4F9121E728C9002DD904 /* MealTableViewControlle1r.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewControlle1r.swift; sourceTree = "<group>"; };
+		CE58680625F8A95600A84BB8 /* FoodTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodTracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE58680925F8A9A500A84BB8 /* NSBundle+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Localization.m"; sourceTree = "<group>"; };
+		CE58680A25F8A9A500A84BB8 /* BundleLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleLocalization.h; sourceTree = "<group>"; };
+		CE58680B25F8A9A500A84BB8 /* LocalizationHandlerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationHandlerUtil.m; sourceTree = "<group>"; };
+		CE58680C25F8A9A600A84BB8 /* LocalizationHandlerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationHandlerUtil.h; sourceTree = "<group>"; };
+		CE58680D25F8A9A600A84BB8 /* NSBundle+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Localization.h"; sourceTree = "<group>"; };
+		CE58680E25F8A9A600A84BB8 /* BundleLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleLocalization.m; sourceTree = "<group>"; };
+		CE58681525F8AA3300A84BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE58681725F8AA4D00A84BB8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		CE58681825F8AA4D00A84BB8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE58681925F8AA4D00A84BB8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE58681A25F8AAA600A84BB8 /* VTLocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTLocalizedString.swift; sourceTree = "<group>"; };
+		CE58681C25F8AECD00A84BB8 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		CE58682825F8C13C00A84BB8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE58682A25F8C1A000A84BB8 /* ParticleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ParticleScene.sks; sourceTree = "<group>"; };
+		CE58682D25F8C1B300A84BB8 /* ParticleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleScene.swift; sourceTree = "<group>"; };
+		CE58682F25F8D04C00A84BB8 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		CE59D07A21E6EF1A0007FA42 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		CE9110C121E5FD7A00F777F4 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		CEF41E4C25F7248D007928A6 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
@@ -152,10 +178,13 @@
 			children = (
 				18259DD321E58BF800F0DA66 /* AppDelegate.swift */,
 				CE9110C121E5FD7A00F777F4 /* RatingControl.swift */,
+				CE58681625F8AA3300A84BB8 /* Localizable.strings */,
+				CE58680425F8A92F00A84BB8 /* Localize */,
 				CEF41E5D25F754DC007928A6 /* Model */,
 				CEF41E5A25F732B4007928A6 /* Controller */,
 				CE59D07A21E6EF1A0007FA42 /* Meal.swift */,
 				CEF41E5825F72BCC007928A6 /* Storyboard.swift */,
+				CE58682F25F8D04C00A84BB8 /* UserDefaultKey.swift */,
 				CEF41E4F25F724E1007928A6 /* Extension */,
 				CEF41E4E25F724AF007928A6 /* Base */,
 				CEF41E4B25F72477007928A6 /* MealTableViewCell */,
@@ -198,6 +227,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE58680425F8A92F00A84BB8 /* Localize */ = {
+			isa = PBXGroup;
+			children = (
+				CE58680A25F8A9A500A84BB8 /* BundleLocalization.h */,
+				CE58680E25F8A9A600A84BB8 /* BundleLocalization.m */,
+				CE58680C25F8A9A600A84BB8 /* LocalizationHandlerUtil.h */,
+				CE58680B25F8A9A500A84BB8 /* LocalizationHandlerUtil.m */,
+				CE58680D25F8A9A600A84BB8 /* NSBundle+Localization.h */,
+				CE58680925F8A9A500A84BB8 /* NSBundle+Localization.m */,
+				CE58680625F8A95600A84BB8 /* FoodTracker-Bridging-Header.h */,
+			);
+			path = Localize;
+			sourceTree = "<group>";
+		};
+		CE58682C25F8C1A900A84BB8 /* ParticleScene */ = {
+			isa = PBXGroup;
+			children = (
+				CE58682A25F8C1A000A84BB8 /* ParticleScene.sks */,
+				CE58682D25F8C1B300A84BB8 /* ParticleScene.swift */,
+			);
+			path = ParticleScene;
+			sourceTree = "<group>";
+		};
 		CEF41E4B25F72477007928A6 /* MealTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +268,7 @@
 				CEF41E6625F772A4007928A6 /* ShowAlertViewController.swift */,
 				CEF41E6A25F772EB007928A6 /* ShowAlertWithConfirm.swift */,
 				CEF41E6425F77274007928A6 /* BaseAlert.storyboard */,
+				CE58682C25F8C1A900A84BB8 /* ParticleScene */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -226,6 +279,8 @@
 				CEF41E5025F72508007928A6 /* UIView.swift */,
 				CEF41E6025F757F8007928A6 /* Results.swift */,
 				CEF41E6225F76233007928A6 /* String.swift */,
+				CE58681A25F8AAA600A84BB8 /* VTLocalizedString.swift */,
+				CE58681C25F8AECD00A84BB8 /* Header.h */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -234,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0C4F9121E728C9002DD904 /* MealTableViewControlle1r.swift */,
+				CE58682825F8C13C00A84BB8 /* LoginViewController.swift */,
 				18259DD521E58BF800F0DA66 /* MealViewController.swift */,
 				CEF41E5625F72638007928A6 /* NewMealViewController.swift */,
 				CEF41E5B25F74268007928A6 /* MealTableViewController.swift */,
@@ -332,6 +388,7 @@
 				TargetAttributes = {
 					18259DCF21E58BF700F0DA66 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1170;
 					};
 					18259DE321E58BF900F0DA66 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -350,6 +407,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 18259DC721E58BF700F0DA66;
 			productRefGroup = 18259DD121E58BF800F0DA66 /* Products */;
@@ -369,9 +427,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF41E4D25F7248D007928A6 /* MealTableViewCell.xib in Resources */,
+				CE58681425F8AA3300A84BB8 /* Localizable.strings in Resources */,
 				18259DDE21E58BF900F0DA66 /* LaunchScreen.storyboard in Resources */,
 				18259DDB21E58BF900F0DA66 /* Assets.xcassets in Resources */,
 				CEF41E6525F77274007928A6 /* BaseAlert.storyboard in Resources */,
+				CE58682B25F8C1A000A84BB8 /* ParticleScene.sks in Resources */,
 				18259DD921E58BF800F0DA66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,7 +560,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE58682E25F8C1B300A84BB8 /* ParticleScene.swift in Sources */,
+				CE58681B25F8AAA600A84BB8 /* VTLocalizedString.swift in Sources */,
 				CEF41E6725F772A4007928A6 /* ShowAlertViewController.swift in Sources */,
+				CE58681025F8A9A600A84BB8 /* LocalizationHandlerUtil.m in Sources */,
+				CE58682925F8C13C00A84BB8 /* LoginViewController.swift in Sources */,
 				CEF41E5325F72524007928A6 /* BaseTableViewCell.swift in Sources */,
 				CEF41E5925F72BCC007928A6 /* Storyboard.swift in Sources */,
 				CE59D07B21E6EF1A0007FA42 /* Meal.swift in Sources */,
@@ -514,7 +578,10 @@
 				CEF41E6125F757F8007928A6 /* Results.swift in Sources */,
 				CE0C4F9221E728C9002DD904 /* MealTableViewControlle1r.swift in Sources */,
 				CEF41E6925F772C6007928A6 /* AlertService.swift in Sources */,
+				CE58683025F8D04C00A84BB8 /* UserDefaultKey.swift in Sources */,
+				CE58681125F8A9A600A84BB8 /* BundleLocalization.m in Sources */,
 				CEF41E6325F76233007928A6 /* String.swift in Sources */,
+				CE58680F25F8A9A600A84BB8 /* NSBundle+Localization.m in Sources */,
 				CEF41E5C25F74268007928A6 /* MealTableViewController.swift in Sources */,
 				CEF41E6B25F772EB007928A6 /* ShowAlertWithConfirm.swift in Sources */,
 				CE0C4F8F21E725FE002DD904 /* MealTableViewCell.swift in Sources */,
@@ -557,6 +624,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18259DD821E58BF800F0DA66 /* Base */,
+				CE58681725F8AA4D00A84BB8 /* vi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -565,8 +633,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				18259DDD21E58BF900F0DA66 /* Base */,
+				CE58681825F8AA4D00A84BB8 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE58681625F8AA3300A84BB8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE58681525F8AA3300A84BB8 /* en */,
+				CE58681925F8AA4D00A84BB8 /* vi */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -576,6 +654,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -636,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -691,6 +771,7 @@
 			baseConfigurationReference = ECBB2FC1AACAC018A91F80ED /* Pods-FoodTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -700,6 +781,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FoodTracker.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTracker/Localize/FoodTracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -710,6 +793,7 @@
 			baseConfigurationReference = B09EC83754FE5895307235E7 /* Pods-FoodTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -719,6 +803,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FoodTracker.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTracker/Localize/FoodTracker-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
