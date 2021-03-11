@@ -5,22 +5,26 @@ PODS:
   - Realm/Headers (10.1.4)
   - RealmSwift (10.1.4):
     - Realm (= 10.1.4)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - RealmSwift
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManager
     - Realm
     - RealmSwift
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
   RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 7e20982a852392b4cf70f81b6b5090a68dba9ae6
+PODFILE CHECKSUM: 0e90d5f3b30c1004b11630bdf0f09382818f365d
 
 COCOAPODS: 1.10.0

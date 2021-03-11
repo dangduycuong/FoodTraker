@@ -2,3 +2,4 @@ ${PODS_ROOT}/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks.s
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
 ${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="anM-nX-EXK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qDF-eG-IZm">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IRC-4G-PvN">
-                                <rect key="frame" x="0.0" y="20" width="375" height="414.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IRC-4G-PvN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="408.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HZC-7d-19T">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="28.5"/>
@@ -30,8 +30,8 @@
                                             <constraint firstAttribute="width" secondItem="GJj-Hg-jCS" secondAttribute="height" multiplier="1:1" id="UVI-pC-Wla"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="O2P-G8-qEp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="61.5" y="364.5" width="252" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="O2P-G8-qEp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="61.5" y="364.5" width="252" height="44"/>
                                     </stackView>
                                 </subviews>
                                 <gestureRecognizers/>
@@ -42,7 +42,7 @@
                                     <outletCollection property="gestureRecognizers" destination="rT6-6w-dsm" appends="YES" id="r4l-6a-if5"/>
                                 </connections>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mRK-SY-t6B">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mRK-SY-t6B">
                                 <rect key="frame" x="8" y="460.5" width="359" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -150,6 +150,38 @@
             </objects>
             <point key="canvasLocation" x="-175.19999999999999" y="877.51124437781118"/>
         </scene>
+        <!--Edamam Food And Grocery DatabaseVC-->
+        <scene sceneID="Ezf-ZP-Xfe">
+            <objects>
+                <viewController id="qDF-eG-IZm" customClass="EdamamFoodAndGroceryDatabaseVC" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWd-gC-nbc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="N2y-tJ-Sp3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qDF-eG-IZm" id="eWn-OW-nYf"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N2y-tJ-Sp3" secondAttribute="trailing" id="EWv-Te-CEC"/>
+                            <constraint firstItem="N2y-tJ-Sp3" firstAttribute="leading" secondItem="8i1-Qg-KMZ" secondAttribute="leading" id="SxM-FV-CsP"/>
+                            <constraint firstItem="N2y-tJ-Sp3" firstAttribute="top" secondItem="8i1-Qg-KMZ" secondAttribute="top" id="cCL-G5-wxw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8i1-Qg-KMZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="N2y-tJ-Sp3" id="pTI-SU-0Dp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzm-cI-F12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-67" y="1532"/>
+        </scene>
         <!--Meal View Controller-->
         <scene sceneID="cRy-VW-nKE">
             <objects>
@@ -179,10 +211,10 @@
                                                     <outletCollection property="gestureRecognizers" destination="9of-Yg-cjW" appends="YES" id="bIx-hk-DXW"/>
                                                 </connections>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-oB-TUP" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-oB-TUP" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                                 <rect key="frame" x="77.5" y="411.5" width="220" height="44"/>
                                             </stackView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WqH-xq-jJ5">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WqH-xq-jJ5">
                                                 <rect key="frame" x="8" y="471.5" width="359" height="33"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>

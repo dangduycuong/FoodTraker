@@ -28,6 +28,12 @@
 		CE58682E25F8C1B300A84BB8 /* ParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58682D25F8C1B300A84BB8 /* ParticleScene.swift */; };
 		CE58683025F8D04C00A84BB8 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58682F25F8D04C00A84BB8 /* UserDefaultKey.swift */; };
 		CE59D07B21E6EF1A0007FA42 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59D07A21E6EF1A0007FA42 /* Meal.swift */; };
+		CE65097C25F9B67400C6FC17 /* EdamamFoodAndGroceryDatabaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65097B25F9B67400C6FC17 /* EdamamFoodAndGroceryDatabaseVC.swift */; };
+		CE65097E25F9B75F00C6FC17 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65097D25F9B75F00C6FC17 /* BaseRouter.swift */; };
+		CE65098025F9BA3100C6FC17 /* WIFI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65097F25F9BA3100C6FC17 /* WIFI.swift */; };
+		CE65098425F9D44900C6FC17 /* SubRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65098325F9D44900C6FC17 /* SubRouter.swift */; };
+		CE65098625F9F03000C6FC17 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65098525F9F03000C6FC17 /* Network.swift */; };
+		CE65098825F9F0EA00C6FC17 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65098725F9F0EA00C6FC17 /* URL.swift */; };
 		CE9110C221E5FD7A00F777F4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9110C121E5FD7A00F777F4 /* RatingControl.swift */; };
 		CEF41E4D25F7248D007928A6 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF41E4C25F7248D007928A6 /* MealTableViewCell.xib */; };
 		CEF41E5125F72508007928A6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF41E5025F72508007928A6 /* UIView.swift */; };
@@ -103,6 +109,12 @@
 		CE58682D25F8C1B300A84BB8 /* ParticleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleScene.swift; sourceTree = "<group>"; };
 		CE58682F25F8D04C00A84BB8 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		CE59D07A21E6EF1A0007FA42 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		CE65097B25F9B67400C6FC17 /* EdamamFoodAndGroceryDatabaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamFoodAndGroceryDatabaseVC.swift; sourceTree = "<group>"; };
+		CE65097D25F9B75F00C6FC17 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		CE65097F25F9BA3100C6FC17 /* WIFI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIFI.swift; sourceTree = "<group>"; };
+		CE65098325F9D44900C6FC17 /* SubRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRouter.swift; sourceTree = "<group>"; };
+		CE65098525F9F03000C6FC17 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CE65098725F9F0EA00C6FC17 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		CE9110C121E5FD7A00F777F4 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		CEF41E4C25F7248D007928A6 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
 		CEF41E5025F72508007928A6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -185,6 +197,10 @@
 				CE59D07A21E6EF1A0007FA42 /* Meal.swift */,
 				CEF41E5825F72BCC007928A6 /* Storyboard.swift */,
 				CE58682F25F8D04C00A84BB8 /* UserDefaultKey.swift */,
+				CE65097D25F9B75F00C6FC17 /* BaseRouter.swift */,
+				CE65097F25F9BA3100C6FC17 /* WIFI.swift */,
+				CE65098325F9D44900C6FC17 /* SubRouter.swift */,
+				CE65098525F9F03000C6FC17 /* Network.swift */,
 				CEF41E4F25F724E1007928A6 /* Extension */,
 				CEF41E4E25F724AF007928A6 /* Base */,
 				CEF41E4B25F72477007928A6 /* MealTableViewCell */,
@@ -281,6 +297,7 @@
 				CEF41E6225F76233007928A6 /* String.swift */,
 				CE58681A25F8AAA600A84BB8 /* VTLocalizedString.swift */,
 				CE58681C25F8AECD00A84BB8 /* Header.h */,
+				CE65098725F9F0EA00C6FC17 /* URL.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -293,6 +310,7 @@
 				18259DD521E58BF800F0DA66 /* MealViewController.swift */,
 				CEF41E5625F72638007928A6 /* NewMealViewController.swift */,
 				CEF41E5B25F74268007928A6 /* MealTableViewController.swift */,
+				CE65097B25F9B67400C6FC17 /* EdamamFoodAndGroceryDatabaseVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -567,9 +585,14 @@
 				CE58682925F8C13C00A84BB8 /* LoginViewController.swift in Sources */,
 				CEF41E5325F72524007928A6 /* BaseTableViewCell.swift in Sources */,
 				CEF41E5925F72BCC007928A6 /* Storyboard.swift in Sources */,
+				CE65098625F9F03000C6FC17 /* Network.swift in Sources */,
 				CE59D07B21E6EF1A0007FA42 /* Meal.swift in Sources */,
 				18259DD621E58BF800F0DA66 /* MealViewController.swift in Sources */,
 				CE9110C221E5FD7A00F777F4 /* RatingControl.swift in Sources */,
+				CE65098425F9D44900C6FC17 /* SubRouter.swift in Sources */,
+				CE65097E25F9B75F00C6FC17 /* BaseRouter.swift in Sources */,
+				CE65097C25F9B67400C6FC17 /* EdamamFoodAndGroceryDatabaseVC.swift in Sources */,
+				CE65098025F9BA3100C6FC17 /* WIFI.swift in Sources */,
 				CEF41E5725F72638007928A6 /* NewMealViewController.swift in Sources */,
 				CEF41E5125F72508007928A6 /* UIView.swift in Sources */,
 				CEF41E5525F72530007928A6 /* BaseViewController.swift in Sources */,
@@ -577,6 +600,7 @@
 				CEF41E5F25F754E9007928A6 /* MealModel.swift in Sources */,
 				CEF41E6125F757F8007928A6 /* Results.swift in Sources */,
 				CE0C4F9221E728C9002DD904 /* MealTableViewControlle1r.swift in Sources */,
+				CE65098825F9F0EA00C6FC17 /* URL.swift in Sources */,
 				CEF41E6925F772C6007928A6 /* AlertService.swift in Sources */,
 				CE58683025F8D04C00A84BB8 /* UserDefaultKey.swift in Sources */,
 				CE58681125F8A9A600A84BB8 /* BundleLocalization.m in Sources */,

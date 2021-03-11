@@ -4,6 +4,7 @@
 target 'FoodTracker' do
 	pod 'RealmSwift'
 	pod 'IQKeyboardManager'
+	pod 'SwiftyJSON', '~> 4.0'
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
